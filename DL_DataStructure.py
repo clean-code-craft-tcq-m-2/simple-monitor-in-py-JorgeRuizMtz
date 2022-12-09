@@ -68,4 +68,3 @@ def ChargeRate_data_Structurte(charge_rate):
     elif charge_rate > 0.8:
         print('|',''.center(space),'|',''.center(space),'|')
         print('|','DANGER!: HIGH Charge rate has been Breach!'.center(space),'|', '¡PELIGRO!: Se ha incumplido el límite de ALTa Tasa de Carga!'.center(space),'|')
-        
