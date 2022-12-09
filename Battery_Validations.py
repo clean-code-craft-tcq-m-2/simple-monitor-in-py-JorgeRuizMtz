@@ -28,5 +28,4 @@ def battery_validation(test):
     
     elif test == (False, False, False):
         print('Check Temperature, State of Charge & Charge Rate. Note: Battery might be compromised and should be replaced. \n')
-    
-    
+        
