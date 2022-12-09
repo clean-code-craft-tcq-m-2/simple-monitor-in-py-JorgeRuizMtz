@@ -14,3 +14,4 @@ if __name__ == '__main__':
     
     assert(battery_test(25, 70, 0.7)) == (True, True, True) 
     assert(battery_test(50, 85, 0)) == (True, True, True)
+    
