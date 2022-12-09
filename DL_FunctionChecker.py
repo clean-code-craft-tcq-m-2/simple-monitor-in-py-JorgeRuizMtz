@@ -38,4 +38,3 @@ def change_rate_is_ok(charge_rate):
         return False
     else:
         return True
-    
