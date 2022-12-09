@@ -12,4 +12,4 @@ def battery_test(temperature, soc, charge_rate):
         soc_is_ok(soc), 
         change_rate_is_ok(charge_rate)
     )
-   
+    
