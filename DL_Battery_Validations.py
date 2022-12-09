@@ -43,4 +43,4 @@ def battery_validation(test):
         print('|',''.center(space),'|',''.center(space),'|')
         print('|','SUMMARY:'.ljust(space),'|','RESUMEN:'.ljust(space),'|')
         print('|','Check Temperature, State of Charge & Charge Rate. Note: Battery might be compromised and should be replaced.'.ljust(space), '|','Revisar Temperatura, Estado de Carga & Tasa de Carga. Nota: La Bateria podria estar fallando y debera ser templazada'.ljust(space),'|')
-        
+ 
