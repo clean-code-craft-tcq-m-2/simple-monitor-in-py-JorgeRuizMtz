@@ -10,13 +10,15 @@ def critical_soc(socinfo):
         print('|',''.center(space),'|',''.center(space),'|')
         print('|','DANGER!: HIGH State of Charge has been Breach!'.center(space),'|', '¡PELIGRO!: Se ha incumplido el límite de ALTO Estado de Carga!'.center(space),'|')
         
-def warning_soc(socinfo):
+def LOWwarning_soc(socinfo):
     
      if socinfo >= 20 and socinfo <= 24:
         print('|',''.center(space),'|',''.center(space),'|')
         print('|','Warning!: State of Charge is getting LOW'.center(space),'|', '¡ADVERTENCIA!: El estado de Carga está BAJANDO'.center(space),'|')
         
-     elif socinfo >= 75 and socinfo <= 80:
+def HIGHwarning_soc(socinfo):
+        
+     if socinfo >= 75 and socinfo <= 80:
         print('|',''.center(space),'|',''.center(space),'|')
         print('|','Warning!: State of Charge is getting HIGH'.center(space),'|', '¡ADVERTENCIA!: El Estado de Carga está AUMENTANDO'.center(space),'|')
         
