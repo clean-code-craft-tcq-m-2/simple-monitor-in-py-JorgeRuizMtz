@@ -1,5 +1,4 @@
 space = 120
-
 def critical_temp(tempdata):
     
     if tempdata < -20:
@@ -27,54 +26,3 @@ def nominal_temp(tempdata):
         print('|','Temperature is Nominal'.center(space),'|', 'La Temperatura es Nominal'.center(space),'|')
     
     
-def critical_soc(socinfo):
-    
-     if socinfo < 20:
-        print('|',''.center(space),'|',''.center(space),'|')
-        print('|','DANGER!: LOW State of Charge has been Breach!'.center(space),'|', '¡PELIGRO!: Se ha incumplido el límite de BAJO Estado de Carga!'.center(space),'|')
-        
-     elif socinfo > 80:
-        print('|',''.center(space),'|',''.center(space),'|')
-        print('|','DANGER!: HIGH State of Charge has been Breach!'.center(space),'|', '¡PELIGRO!: Se ha incumplido el límite de ALTO Estado de Carga!'.center(space),'|')
-        
-def warning_soc(socinfo):
-    
-     if socinfo >= 20 and socinfo <= 24:
-        print('|',''.center(space),'|',''.center(space),'|')
-        print('|','Warning!: State of Charge is getting LOW'.center(space),'|', '¡ADVERTENCIA!: El estado de Carga está BAJANDO'.center(space),'|')
-        
-     elif socinfo >= 75 and socinfo <= 80:
-        print('|',''.center(space),'|',''.center(space),'|')
-        print('|','Warning!: State of Charge is getting HIGH'.center(space),'|', '¡ADVERTENCIA!: El Estado de Carga está AUMENTANDO'.center(space),'|')
-        
-def nominal_soc(socinfo):
-     
-     if socinfo > 24 and socinfo < 75:
-        print('|',''.center(space),'|',''.center(space),'|')
-        print('|','State of Charge is Nominal'.center(space),'|', 'El Estado de Carga es Nominal'.center(space),'|')
-       
-
-def critical_chargerate(ratedata):
-    
-    if ratedata == 0 :
-        print('|',''.center(space),'|',''.center(space),'|')
-        print('|','DANGER!: LOW Charge rate has been Breach!'.center(space),'|', '¡PELIGRO!: Se ha incumplido el límite de BAJA Tasa de Carga!'.center(space),'|')
-        
-    elif ratedata > 0.8:
-        print('|',''.center(space),'|',''.center(space),'|')
-        print('|','DANGER!: HIGH Charge rate has been Breach!'.center(space),'|', '¡PELIGRO!: Se ha incumplido el límite de ALTa Tasa de Carga!'.center(space),'|')
- 
-def warning_chargerate(ratedata):
-     if ratedata > 0 and ratedata <= 0.04:
-        print('|',''.center(space),'|',''.center(space),'|')
-        print('|','Warning!: Charge rate is getting LOW'.center(space),'|', '¡ADVERTENCIA!: La Tasa de Carga está BAJANDO'.center(space),'|')
-
-     elif ratedata >= 0.76 and ratedata <= 0.8:
-        print('|',''.center(space),'|',''.center(space),'|')
-        print('|','Warning!: Charge rate is getting HIGH'.center(space),'|', '¡ADVERTENCIA!: La Tasa de Carga está AUMENTANDO'.center(space),'|')
-        
-def nominal_chargerate(ratedata):
-    
-     if ratedata > 0.04 and ratedata <= 0.76:
-        print('|',''.center(space),'|',''.center(space),'|')
-        print('|','Charge rate is Nominal'.center(space),'|', 'La Tasa de Carga es Nominal'.center(space),'|')
