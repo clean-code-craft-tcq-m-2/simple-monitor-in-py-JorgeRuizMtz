@@ -10,13 +10,13 @@ def critical_temp(tempdata):
         print('|',''.center(space),'|',''.center(space),'|')
         print('|','DANGER!: HIGH Temperarute has been Breach!'.center(space),'|', '¡PELIGRO!: Se ha incumplido el límite de ALTA Temperatura!'.center(space),'|')
         
-def warning_temp(tempdata):
-    
+def LOWwarning_temp(tempdata):
     if -17.5 <= tempdata >= -20 and tempdata <= -17.5:
         print('|',''.center(space),'|',''.center(space),'|')
         print('|','Warning!: Temperature is getting LOW'.center(space),'|', '¡ADVERTENCIA!: La temperatura está BAJANDO'.center(space),'|')
-    
-    elif tempdata >= 47.5 and tempdata <= 50:
+ 
+def HIGHwarning_temp(tempdata):    
+    if tempdata >= 47.5 and tempdata <= 50:
         print('|',''.center(space),'|',''.center(space),'|')
         print('|','Warning!: Temperature is getting HIGH'.center(space),'|', '¡ADVERTENCIA!: La temperatura está AUMENTANDO'.center(space),'|')
 
