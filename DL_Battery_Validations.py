@@ -14,16 +14,22 @@ def Onefalse_battery_validation(test):
         print('|',''.center(space),'|',''.center(space),'|')
         print('|','SUMMARY:'.ljust(space),'|','RESUMEN:'.ljust(space),'|')
         print('|','Check battery temperature'.ljust(space), '|','Revisar la temperatura de la Bateria'.ljust(space),'|')
-    
-    elif test == (True, False, True):
-        print('|',''.center(space),'|',''.center(space),'|')
-        print('|','SUMMARY:'.ljust(space),'|','RESUMEN:'.ljust(space),'|')
-        print('|','Check State of charge'.ljust(space), '|','Revisar el Estado de Carga'.ljust(space),'|')
         
     elif test == (True, True, False):
         print('|',''.center(space),'|',''.center(space),'|')
         print('|','SUMMARY:'.ljust(space),'|','RESUMEN:'.ljust(space),'|')
         print('|','Check Charge Rate'.ljust(space), '|','Revisar Tasa de Carga'.ljust(space),'|')
+        
+def MiddleFMiddleT_battery_validation(test):
+    if test == (True, False, True):
+        print('|',''.center(space),'|',''.center(space),'|')
+        print('|','SUMMARY:'.ljust(space),'|','RESUMEN:'.ljust(space),'|')
+        print('|','Check State of charge'.ljust(space), '|','Revisar el Estado de Carga'.ljust(space),'|')
+            
+    elif test == (False, True, False):
+        print('|',''.center(space),'|',''.center(space),'|')
+        print('|','SUMMARY:'.ljust(space),'|','RESUMEN:'.ljust(space),'|')
+        print('|','Check Temperature & Charge Rate. Note: Battery might be compromised'.ljust(space), '|','Revisar Temperatura & Tasa de Carga. Nota: La Bateria podria estar fallando'.ljust(space),'|')
         
 def Onetrue_battery_validation(test):
     
@@ -37,10 +43,6 @@ def Onetrue_battery_validation(test):
         print('|','SUMMARY:'.ljust(space),'|','RESUMEN:'.ljust(space),'|')
         print('|','Check State of Charge & Charge Rate. Note: Battery might be compromised'.ljust(space), '|','Revisar Estado de carga & Tasa de Carga. Nota: La Bateria podria estar fallando'.ljust(space),'|')
         
-    elif test == (False, True, False):
-        print('|',''.center(space),'|',''.center(space),'|')
-        print('|','SUMMARY:'.ljust(space),'|','RESUMEN:'.ljust(space),'|')
-        print('|','Check Temperature & Charge Rate. Note: Battery might be compromised'.ljust(space), '|','Revisar Temperatura & Tasa de Carga. Nota: La Bateria podria estar fallando'.ljust(space),'|')
     
 def AllBad_battery_validation(test):
     if test == (False, False, False):
