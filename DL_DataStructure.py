@@ -1,26 +1,30 @@
 space = 120
 def temp_data_Structurte(temp):
     
-    if temp < -20:
+    while temp < -20:
         print('|',''.center(space),'|',''.center(space),'|')
         print('|','DANGER!: LOW temperature limit has been Breach!'.center(space),'|', '¡PELIGRO!: Se ha incumplido el límite de BAJA Temperatura!'.center(space),'|')
-        
-    elif temp >= -20 and temp <= -17.5:
+        break
+    
+    while temp >= -20 and temp <= -17.5:
         print('|',''.center(space),'|',''.center(space),'|')
         print('|','Warning!: Temperature is getting LOW'.center(space),'|', '¡ADVERTENCIA!: La temperatura está BAJANDO'.center(space),'|')
-        
-    elif temp > -17.5 and temp < 47.5:
+        break
+    
+    while temp > -17.5 and temp < 47.5:
         print('|',''.center(space),'|',''.center(space),'|')
         print('|','Temperature is Nominal'.center(space),'|', 'La Temperatura es Nominal'.center(space),'|')
-        
-    elif temp >= 47.5 and temp <= 50:
+        break
+    
+    while temp >= 47.5 and temp <= 50:
         print('|',''.center(space),'|',''.center(space),'|')
         print('|','Warning!: Temperature is getting HIGH'.center(space),'|', '¡ADVERTENCIA!: La temperatura está AUMENTANDO'.center(space),'|')
-        
-    elif temp > 50:
+        break
+    
+    while temp > 50:
         print('|',''.center(space),'|',''.center(space),'|')
         print('|','DANGER!: HIGH Temperarute has been Breach!'.center(space),'|', '¡PELIGRO!: Se ha incumplido el límite de ALTA Temperatura!'.center(space),'|')
-        
+        break
     
 def soc_data_Structurte(Datasoc):
     
