@@ -12,7 +12,7 @@ def critical_temp(tempdata):
         
 def warning_temp(tempdata):
     
-    if tempdata >= -20 and tempdata <= -17.5:
+    if -17.5 <= tempdata >= -20 and tempdata <= -17.5:
         print('|',''.center(space),'|',''.center(space),'|')
         print('|','Warning!: Temperature is getting LOW'.center(space),'|', '¡ADVERTENCIA!: La temperatura está BAJANDO'.center(space),'|')
     
@@ -20,3 +20,8 @@ def warning_temp(tempdata):
         print('|',''.center(space),'|',''.center(space),'|')
         print('|','Warning!: Temperature is getting HIGH'.center(space),'|', '¡ADVERTENCIA!: La temperatura está AUMENTANDO'.center(space),'|')
 
+def nominal_temp(tempdata):
+    
+    if tempdata > -17.5 and tempdata < 47.5:
+        print('|',''.center(space),'|',''.center(space),'|')
+        print('|','Temperature is Nominal'.center(space),'|', 'La Temperatura es Nominal'.center(space),'|')
